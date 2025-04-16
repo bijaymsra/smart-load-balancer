@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dashboard-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dashboard
+  template:
+    metadata:
+      labels:
+        app: dashboard
+    spec:
+      containers:
+      - name: dashboard-container
+        image: techbabu/dashboard-service:latest
+        imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: "100m"         # Minimum guaranteed CPU
+            memory: "128Mi"     # Minimum guaranteed Memory
+          limits:
+            cpu: "500m"         # Max CPU the container can use
+            memory: "512Mi"     # Max Memory
+        ports:
+        - containerPort: 8081

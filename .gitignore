@@ -1,0 +1,12 @@
+# Root .gitignore
+node_modules/
+*.log
+target/
+*.class
+*.jar
+*.war
+*.iml
+.idea/
+*.DS_Store
+.env
+
