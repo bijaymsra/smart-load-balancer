@@ -4,8 +4,8 @@ An intelligent, containerized microservices-based system that utilizes **Kuberne
 
 ---
 
-## 🌐 Live Demo (Optional)
-> 🔗 [Link to hosted demo or Loom/YouTube video] *(Add here if available)*
+## 🌐 Live Demo 
+> 🔗 [Link to hosted demo or Loom/YouTube video]
 
 ---
 
