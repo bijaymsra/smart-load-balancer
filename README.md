@@ -88,6 +88,7 @@ From each service directory, run:
 
 ```bash
 docker build -t service-name:latest .
+```
 
 ## 📌 Features
 
