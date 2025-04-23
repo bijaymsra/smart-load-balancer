@@ -72,44 +72,66 @@ Prometheus	http://localhost:9090
 
 ```
 
+---
+
+### 🔍 Output Preview:
+
 ## 📊 Monitoring
-Grafana: Displays charts for CPU, memory, and traffic usage
-Prometheus: Collects metrics from all microservices and Kubernetes
+
+- **Grafana**: Displays dynamic charts for CPU, memory, and traffic usage  
+- **Prometheus**: Collects metrics from all microservices and Kubernetes components  
+
+---
 
 ## 🐳 Docker
-All services are containerized using Docker.
 
-# From each service directory
+All services are fully containerized using **Docker**.
+
+### 🔧 Build Docker Images
+
+From each service directory, run:
+
+```bash
 docker build -t service-name:latest .
-You can push them to DockerHub or use locally inside your Kubernetes cluster.
 
 ## 📌 Features
-- ✅ Kubernetes-powered autoscaling
-✅ Real-time traffic distribution based on CPU usage
-✅ React dashboard with dynamic charts
-✅ Prometheus and Grafana integration
-✅ Microservices fully containerized
-✅ Cloud deployment-ready
+
+- ✅ Kubernetes-powered autoscaling  
+- ✅ Real-time traffic distribution based on CPU usage  
+- ✅ React dashboard with dynamic charts  
+- ✅ Prometheus and Grafana integration  
+- ✅ Microservices fully containerized  
+- ✅ Cloud deployment-ready  
 
 ## ✍️ Author
-Bijay M S R A
-GitHub Profile
 
+**Bijay M S R A**  
+[GitHub Profile](https://github.com/bijaymsra)
+
+---
 
 ## 📜 License
-This project is licensed under the MIT License.
-📸 Optional Additions
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 📸 Optional Additions
+
 Want to improve this README further? Consider adding:
-🧱 Architecture Diagram (PNG/SVG)
-🖼️ Screenshots of the frontend & Grafana dashboard
-🎥 Project demo video (YouTube/Loom)
-☁️ Deployment steps for GCP / AWS / Azure
-🤝 Contribution guidelines
 
+- 🧱 **Architecture Diagram** (PNG/SVG)
+- 🖼️ **Screenshots** of the frontend & Grafana dashboard
+- 🎥 **Project Demo Video** (YouTube/Loom)
+- ☁️ **Deployment Steps** for GCP / AWS / Azure
+- 🤝 **Contribution Guidelines**
 
+## 💡 Need Help?
 
-## Let me know if you want help generating:
-- A diagram of your architecture
-- YAML templates for Prometheus/Grafana setup
-- GitHub Actions CI/CD for auto-deployments  
-Happy to help polish this project even more!
+Let me know if you want help generating:
+
+- 🧱 A diagram of your architecture  
+- 📄 YAML templates for Prometheus/Grafana setup  
+- ⚙️ GitHub Actions CI/CD for auto-deployments  
+
+✨ Happy to help polish this project even more!
