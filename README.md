@@ -4,11 +4,6 @@ An intelligent, containerized microservices-based system that utilizes **Kuberne
 
 ---
 
-## 🌐 Live Demo 
-> 🔗 [Link to hosted demo or Loom/YouTube video]
-
----
-
 ## 🛠️ Tech Stack
 
 | Layer        | Technology                         |
@@ -24,9 +19,14 @@ An intelligent, containerized microservices-based system that utilizes **Kuberne
 
 ## 📁 Project Structure
 
-smart-load-balancer/ ├── client/ # React frontend ├── backend/ # Spring Boot backend ├── services/ # Additional microservices (e.g., dashboard) ├── k8s/ # Kubernetes YAMLs (Deployment, Services, HPA, etc.) └── README.md
-
-
+```
+smart-load-balancer/
+├── client/        # React frontend
+├── backend/       # Spring Boot backend
+├── services/      # Additional microservices (e.g., dashboard)
+├── k8s/           # Kubernetes YAMLs (Deployment, Services, HPA, etc.)
+└── README.md
+```
 
 ---
 
@@ -70,18 +70,20 @@ Backend APIs	http://<backend-service-ip>:<port>
 Grafana	http://localhost:3000
 Prometheus	http://localhost:9090
 
-📊 Monitoring
+```
+
+## 📊 Monitoring
 Grafana: Displays charts for CPU, memory, and traffic usage
 Prometheus: Collects metrics from all microservices and Kubernetes
 
-🐳 Docker
+## 🐳 Docker
 All services are containerized using Docker.
 
 # From each service directory
 docker build -t service-name:latest .
 You can push them to DockerHub or use locally inside your Kubernetes cluster.
 
-📌 Features
+## 📌 Features
 ✅ Kubernetes-powered autoscaling
 ✅ Real-time traffic distribution based on CPU usage
 ✅ React dashboard with dynamic charts
@@ -89,12 +91,12 @@ You can push them to DockerHub or use locally inside your Kubernetes cluster.
 ✅ Microservices fully containerized
 ✅ Cloud deployment-ready
 
-✍️ Author
+## ✍️ Author
 Bijay M S R A
 GitHub Profile
 
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
 📸 Optional Additions
 Want to improve this README further? Consider adding:
@@ -106,7 +108,7 @@ Want to improve this README further? Consider adding:
 
 
 
-Let me know if you want help generating:
+## Let me know if you want help generating:
 - A diagram of your architecture
 - YAML templates for Prometheus/Grafana setup
 - GitHub Actions CI/CD for auto-deployments  
