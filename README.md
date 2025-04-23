@@ -74,8 +74,6 @@ Prometheus	http://localhost:9090
 
 ---
 
-### 🔍 Output Preview:
-
 ## 📊 Monitoring
 
 - **Grafana**: Displays dynamic charts for CPU, memory, and traffic usage  
@@ -83,11 +81,8 @@ Prometheus	http://localhost:9090
 
 ---
 
-## 🐳 Docker
 
-All services are fully containerized using **Docker**.
-
-### 🔧 Build Docker Images
+## 🔧 Build Docker Images
 
 From each service directory, run:
 
