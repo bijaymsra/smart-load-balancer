@@ -84,7 +84,7 @@ docker build -t service-name:latest .
 You can push them to DockerHub or use locally inside your Kubernetes cluster.
 
 ## 📌 Features
-✅ Kubernetes-powered autoscaling
+- ✅ Kubernetes-powered autoscaling
 ✅ Real-time traffic distribution based on CPU usage
 ✅ React dashboard with dynamic charts
 ✅ Prometheus and Grafana integration
