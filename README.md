@@ -46,6 +46,7 @@ smart-load-balancer/
 ### 1️⃣ Clone the Repository
 
 ```bash
+
 1️⃣ Clone the Repository
 git clone https://github.com/bijaymsra/smart-load-balancer.git
 cd smart-load-balancer
@@ -60,24 +61,27 @@ kubectl apply -f k8s/
 This includes:
 ✅ Spring Boot backend  
 ✅ React frontend  
-✅ Dashboard service  
+✅ Dashboard microservice  
 ✅ MySQL database  
-✅ HPA configuration  
+✅ HPA (Horizontal Pod Autoscaler) configuration  
 
 4️⃣ Set Up the Database (MySQL)
-- The MySQL service will be deployed via Kubernetes.
-- The Spring Boot services are pre-configured to connect to the internal MySQL Kubernetes service using `spring.datasource.url=jdbc:mysql://mysql-service:3306/<your-db-name>`.
-- Default credentials (from `application.properties` or Secret):
-  - **Username**: `root`
-  - **Password**: `password` (or check your Kubernetes Secret config)
+- MySQL service is automatically deployed via Kubernetes.
+- Spring Boot microservices are configured to connect using:
+  `spring.datasource.url=jdbc:mysql://mysql-service:3306/<your-db-name>`
 
-💡 You can inspect or modify your MySQL config via:
-kubectl get svc/mysql-service
+- Default credentials (can be found or overridden via Kubernetes Secrets):
+  - **Username**: `root`
+  - **Password**: `password`
+
+💡 To inspect or access MySQL directly:
+kubectl get svc mysql-service
 kubectl exec -it <mysql-pod-name> -- mysql -u root -p
 
 5️⃣ Access the Services
 
-For Microservices PortForward:-  kubectl port-forward service/dashboard-service 8083:80
+📌 For Microservices Port Forwarding:
+kubectl port-forward service/dashboard-service 8083:80
 
 | Service          | URL                                 |
 |------------------|-------------------------------------|
@@ -85,6 +89,7 @@ For Microservices PortForward:-  kubectl port-forward service/dashboard-service 
 | Backend APIs     | http://<backend-service-ip>:<port>  |
 | Microservices    | http://localhost:8083/dashboard     |
 | MySQL (internal) | mysql://mysql-service:3306          |
+
 
 ```
 
