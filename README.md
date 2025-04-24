@@ -6,14 +6,14 @@ An intelligent, containerized microservices-based system that utilizes **Kuberne
 
 ## 🛠️ Tech Stack
 
-| Layer        | Technology                         |
-|--------------|-------------------------------------|
-| Frontend     | React.js + Recharts                |
-| Backend      | Spring Boot (Java)                 |
-| Containerization | Docker                          |
-| Orchestration | Kubernetes (kind + Docker Desktop) |
-| Monitoring   | Prometheus + Grafana               |
-| Load Balancing | Kubernetes HPA (CPU > 75%)       |
+| Layer            | Technology                          |
+|------------------|-------------------------------------|
+| Frontend         | React.js + Recharts                 |
+| Backend          | Spring Boot (Java)                  |
+| Containerization | Docker                              |
+| Orchestration    | Kubernetes (kind + Docker Desktop)  |
+| Monitoring       | Prometheus + Grafana                |
+| Load Balancing   | Kubernetes HPA (CPU > 50%)          |
 
 ---
 
@@ -46,29 +46,45 @@ smart-load-balancer/
 ### 1️⃣ Clone the Repository
 
 ```bash
+1️⃣ Clone the Repository
 git clone https://github.com/bijaymsra/smart-load-balancer.git
 cd smart-load-balancer
-
 
 2️⃣ Start Kubernetes Cluster (via kind)
 Make sure Docker Desktop is running and Kubernetes is enabled.
 kind create cluster --name smart-lb-cluster
 
-3️⃣ Deploy Services
+3️⃣ Deploy Services and Infrastructure
 kubectl apply -f k8s/
 
 This includes:
-Spring Boot backend
-React frontend
-Dashboard service
-HPA configuration
+✅ Spring Boot backend  
+✅ React frontend  
+✅ Dashboard service  
+✅ MySQL database  
+✅ HPA configuration  
 
-4️⃣ Access the Services
-Service	URL
-React Client	http://localhost:<NodePort>
-Backend APIs	http://<backend-service-ip>:<port>
-Grafana	http://localhost:3000
-Prometheus	http://localhost:9090
+4️⃣ Set Up the Database (MySQL)
+- The MySQL service will be deployed via Kubernetes.
+- The Spring Boot services are pre-configured to connect to the internal MySQL Kubernetes service using `spring.datasource.url=jdbc:mysql://mysql-service:3306/<your-db-name>`.
+- Default credentials (from `application.properties` or Secret):
+  - **Username**: `root`
+  - **Password**: `password` (or check your Kubernetes Secret config)
+
+💡 You can inspect or modify your MySQL config via:
+kubectl get svc/mysql-service
+kubectl exec -it <mysql-pod-name> -- mysql -u root -p
+
+5️⃣ Access the Services
+
+For Microservices PortForward:-  kubectl port-forward service/dashboard-service 8083:80
+
+| Service          | URL                                 |
+|------------------|-------------------------------------|
+| React Client     | http://localhost:3000               |
+| Backend APIs     | http://<backend-service-ip>:<port>  |
+| Microservices    | http://localhost:8083/dashboard     |
+| MySQL (internal) | mysql://mysql-service:3306          |
 
 ```
 
