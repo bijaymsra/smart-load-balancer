@@ -33,7 +33,7 @@ smart-load-balancer/
 ## 📸 Project Previews
 
 <p align="center">
-  <i>Dashboard showing microservices metrics</i>
+  <u>Dashboard showing microservices metrics</u>
   <br/>
   <img src="./images/dashboard.png" alt="React Dashboard"/>
 </p>
