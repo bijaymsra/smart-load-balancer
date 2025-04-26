@@ -33,33 +33,33 @@ smart-load-balancer/
 ## 📸 Project Previews
 
 <p align="center">
-  <i>React Dashboard showing microservices metrics</i>
+  <i>Dashboard showing microservices metrics</i>
   <br/>
   <img src="./images/dashboard.png" width="900" alt="React Dashboard"/>
 </p>
 
 <p align="center">
-  <img src="./images/service-visual01.png" width="600" alt="Service Architecture Visual 1"/>
+    <i>Microservices initital Running Visual</i>
     <br/>
-  <i>Microservices initital Running Visual</i>
+    <img src="./images/service-visual01.png" width="900" alt="Service Architecture Visual 1"/>
 </p>
 
 <p align="center">
-  <img src="./images/service-visual02.png" width="600" alt="Service Architecture Visual 2"/>
+    <i>Microservices After Request send showing Scaled up running Visual</i>
     <br/>
-  <i>Microservices After Request send showing Scaled up running Visual</i>
+    <img src="./images/service-visual02.png" width="600" alt="Service Architecture Visual 2"/>
 </p>
 
 <p align="center">
-  <img src="./images/metrics.png" width="600" alt="Metrics via Chart"/>
-  <br/>
-  <i>Real-time CPU/memory data via Charts</i>
+    <i>Real-time CPU/memory data via Charts</i>
+    <br/>
+    <img src="./images/metrics.png" width="900" alt="Metrics via Chart"/>
 </p>
 
 <p align="center">
-  <img src="./images/microservice.png" width="600" height="300" alt="Microservices Architecture"/>
-  <br/>
-  <i>Microservices interactions and Deployed</i>
+    <i>Microservices interactions and Deployed</i>
+    <br/>
+    <img src="./images/microservice.png" width="900" height="300" alt="Microservices Architecture"/>
 </p>
 
 ---
