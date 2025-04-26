@@ -30,6 +30,37 @@ smart-load-balancer/
 
 ---
 
+## 📸 Project Previews
+
+<p align="center">
+  <img src="./images/dashboard.png" width="600" alt="React Dashboard"/>
+  <br/>
+  <i>React Dashboard showing microservices metrics</i>
+</p>
+
+<p align="center">
+  <img src="./images/metrics.png" width="600" alt="Prometheus Metrics"/>
+  <br/>
+  <i>Prometheus scraping real-time CPU/memory data</i>
+</p>
+
+<p align="center">
+  <img src="./images/microservice.png" width="600" alt="Microservices Architecture"/>
+  <br/>
+  <i>Microservices connections and interactions</i>
+</p>
+
+<p align="center">
+  <img src="./images/service-visual01.png" width="600" alt="Service Architecture Visual 1"/>
+</p>
+
+<p align="center">
+  <img src="./images/service-visual02.png" width="600" alt="Service Architecture Visual 2"/>
+</p>
+
+---
+
+
 ## ⚙️ How It Works
 
 1. **Kubernetes** orchestrates all services and manages scaling.
@@ -95,14 +126,6 @@ kubectl port-forward service/dashboard-service 8083:80
 
 ---
 
-## 📊 Monitoring
-
-- **Grafana**: Displays dynamic charts for CPU, memory, and traffic usage  
-- **Prometheus**: Collects metrics from all microservices and Kubernetes components  
-
----
-
-
 ## 🔧 Build Docker Images
 
 From each service directory, run:
@@ -111,14 +134,17 @@ From each service directory, run:
 docker build -t service-name:latest .
 ```
 
+---
+
 ## 📌 Features
 
 - ✅ Kubernetes-powered autoscaling  
 - ✅ Real-time traffic distribution based on CPU usage  
 - ✅ React dashboard with dynamic charts  
-- ✅ Prometheus and Grafana integration  
 - ✅ Microservices fully containerized  
-- ✅ Cloud deployment-ready  
+- ✅ Cloud deployment-ready
+
+  ---
 
 ## ✍️ Author
 
