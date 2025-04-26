@@ -39,25 +39,25 @@ smart-load-balancer/
 </p>
 
 <p align="center">
-    <i>Microservices initital Running Visual</i>
+    <b>Microservices initital Running Visual</b>
     <br/>
     <img src="./images/service-visual01.png" alt="Service Architecture Visual 1"/>
 </p>
 
 <p align="center">
-    <i>Microservices After Request send showing Scaled up running Visual</i>
+    <b>Microservices After Request send showing Scaled up running Visual</b>
     <br/>
     <img src="./images/service-visual02.png" alt="Service Architecture Visual 2"/>
 </p>
 
 <p align="center">
-    <i>Real-time CPU/memory data via Charts</i>
+    <b>Real-time CPU/memory data via Charts</b>
     <br/>
     <img src="./images/metrics.png" alt="Metrics via Chart"/>
 </p>
 
 <p align="center">
-    <i>Microservices interactions and Deployed</i>
+    <b>Microservices interactions and Deployed</b>
     <br/>
     <img src="./images/microservice.png" alt="Microservices Architecture"/>
 </p>
