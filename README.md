@@ -59,7 +59,7 @@ smart-load-balancer/
 <p align="center">
   <img src="./images/microservice.png" width="600" alt="Microservices Architecture"/>
   <br/>
-  <i>Microservices connections and interactions</i>
+  <i>Microservices interactions and Deployed</i>
 </p>
 
 ---
