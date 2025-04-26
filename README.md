@@ -39,23 +39,27 @@ smart-load-balancer/
 </p>
 
 <p align="center">
-  <img src="./images/metrics.png" width="600" alt="Prometheus Metrics"/>
+  <img src="./images/metrics.png" width="600" alt="Metrics via Chart"/>
   <br/>
-  <i>Prometheus scraping real-time CPU/memory data</i>
+  <i>Real-time CPU/memory data via Charts</i>
+</p>
+
+<p align="center">
+  <img src="./images/service-visual01.png" width="600" alt="Service Architecture Visual 1"/>
+    <br/>
+  <i>Microservices initital Running Visual</i>
+</p>
+
+<p align="center">
+  <img src="./images/service-visual02.png" width="600" alt="Service Architecture Visual 2"/>
+    <br/>
+  <i>Microservices After Request send showing Scaled up running Visual</i>
 </p>
 
 <p align="center">
   <img src="./images/microservice.png" width="600" alt="Microservices Architecture"/>
   <br/>
   <i>Microservices connections and interactions</i>
-</p>
-
-<p align="center">
-  <img src="./images/service-visual01.png" width="600" alt="Service Architecture Visual 1"/>
-</p>
-
-<p align="center">
-  <img src="./images/service-visual02.png" width="600" alt="Service Architecture Visual 2"/>
 </p>
 
 ---
