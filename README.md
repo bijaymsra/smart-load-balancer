@@ -68,7 +68,7 @@ smart-load-balancer/
 ## ⚙️ How It Works
 
 1. **Kubernetes** orchestrates all services and manages scaling.
-2. **Horizontal Pod Autoscaler (HPA)** dynamically scales pods based on CPU thresholds (>75%).
+2. **Horizontal Pod Autoscaler (HPA)** dynamically scales pods based on CPU thresholds (>50%).
 3. **Docker** containers wrap each service for consistency.
 4. **Prometheus** scrapes CPU/memory metrics from pods.
 5. **Grafana** visualizes real-time data using customizable dashboards.
