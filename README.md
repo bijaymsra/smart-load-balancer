@@ -56,10 +56,12 @@ smart-load-balancer/
   <i>Microservices After Request send showing Scaled up running Visual</i>
 </p>
 
+<p align="center">
+  <img src="./images/microservice.png" width="600" height="200" alt="Microservices Architecture"/>
+  <br/>
+  <i>Microservices interactions and Deployed</i>
+</p>
 
-
-### 🔐 Admin Panel
-![Microservice Panel](./images/microservice.png)
 ---
 
 
