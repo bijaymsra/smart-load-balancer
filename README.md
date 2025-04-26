@@ -32,9 +32,9 @@ smart-load-balancer/
 
 ## 📸 Project Previews
 
-<p align="center">
   <i>Dashboard showing microservices metrics</i>
   <br/>
+<p align="center">
   <img src="./images/dashboard.png" width="900" alt="React Dashboard"/>
 </p>
 
@@ -47,7 +47,7 @@ smart-load-balancer/
 <p align="center">
     <i>Microservices After Request send showing Scaled up running Visual</i>
     <br/>
-    <img src="./images/service-visual02.png" width="600" alt="Service Architecture Visual 2"/>
+    <img src="./images/service-visual02.png" width="900" alt="Service Architecture Visual 2"/>
 </p>
 
 <p align="center">
