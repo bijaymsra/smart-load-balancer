@@ -39,7 +39,7 @@ smart-load-balancer/
 </p>
 
 <p align="center">
-    <b>Microservices initital Running Visual</b>
+    <b>Microservices initial Running Visual</b>
     <br/>
     <img src="./images/service-visual01.png" alt="Service Architecture Visual 1"/>
 </p>
